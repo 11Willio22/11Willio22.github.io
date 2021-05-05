@@ -1,23 +1,23 @@
 body {
-	margin:0 0 50px 0;
+	margin: 0 0 50px 0;
 }
 
 #title {
-	font:50pt Impact;
-	text-align:center;
-	color:#0F0F0F37;
+	font: 50pt Impact;
+	text-align: center;
+	color: #0F0F0F37;
 	margin: 0 0 10px 0;
 }
 
 #download {
-	display:block;
-	width:70vw;
-	height:50px;
-	font:17pt Courier;
-	text-align:center;
-	background:#232353;
-	color:#F1F1F1;
-	margin:10px auto;
+	display: block;
+	width: 70vw;
+	height: 50px;
+	font: 17pt Courier;
+	text-align: center;
+	background: #232353;
+	color: #F1F1F1;
+	margin: 0px auto;
 }
 
 #titleDiv {
@@ -25,13 +25,48 @@ body {
 }
 
 #inputTable {
-	display:block;
-	margin:auto auto 10px auto;
-	padding:10px 0 0 0;
+	display: block;
+	margin: auto auto 10px auto;
+	padding: 10px 0 0 0;
 }
 
 #canvas {
-	display:block;
-	margin:auto;
-	padding:0;
+	display: block;
+	margin: auto;
+	padding: 0;
+}
+
+#bgimgdiv {
+  display: block;
+  margin: auto;
+  padding: 0px 100px;
+}
+
+#bgimgsrc {
+  display: block;
+  margin: auto;
+  width: 70%;
+  height: 10px;
+  padding: 20px;
+  float: left;
+  clear: both;
+}
+
+#bgimgsrclabel {
+  display: block;
+  margin: auto;
+  width: 70%;
+  height: 10px;
+  padding: 10px;
+}
+
+#bgimgbutton {
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 20%;
+  height: 50px;
+  padding: 10px;
+  float:right;
+  font: 20px Times New Roman;
 }
