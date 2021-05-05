@@ -267,8 +267,6 @@ function onMouseClickIT(event) {
 	let mx = parseInt((event.clientX - rect.left) / cellWidth)
 	let my = parseInt((event.clientY - rect.top - cellHeight / 2) / cellHeight)
 	
-	console.log((inputTableSelected % cellsX) + "," + (parseInt(inputTableSelected / cellsY)))
-	
 	if (my > 0) {
 			
 		inputTableSelected = mx + my * cellsX
@@ -278,8 +276,8 @@ function onMouseClickIT(event) {
 }
 
 function onKeyDown(event) {
-	event.preventDefault()
-	if (inputTableSelected != -1) {
+	if (document.activeElement == inputTable && inputTableSelected != -1) {
+		event.preventDefault()
 		if (event.key == "Backspace") {
 			inputTableData[inputTableSelected] = inputTableData[inputTableSelected].substring(0,inputTableData[inputTableSelected].length - 1)
 		} else if (event.key == "Tab") {
@@ -311,6 +309,11 @@ function onKeyDown(event) {
 		draw()
 	}
 }
+
+var imgsrcinput = document.getElementById("bgimgsrc")
+imgsrcinput.addEventListener("onclick", function(e) {
+	bgImage = loadImage(imgsrcinput.value)
+})
 
 inputTable.addEventListener("mousedown",onMouseClickIT)
 
