@@ -226,6 +226,7 @@ function loadImage(src) {
 	var image = new Image();
 	image.src = src;
 	image.onload = loadFunction
+  image.crossOrigin = "anonymous"
 	imagesToLoad++;
 	return image;
 }
