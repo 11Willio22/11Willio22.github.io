@@ -313,6 +313,7 @@ function onKeyDown(event) {
 var imgsrcinput = document.getElementById("bgimgsrc")
 document.getElementById("bgimgbutton").addEventListener("click", function(e) {
 	bgImage = loadImage(imgsrcinput.value)
+	draw();
 })
 
 inputTable.addEventListener("mousedown",onMouseClickIT)
