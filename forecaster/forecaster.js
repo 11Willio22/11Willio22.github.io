@@ -276,7 +276,7 @@ function onMouseClickIT(event) {
 }
 
 function onKeyDown(event) {
-	if (inputTableSelected != -1) {
+	if (inputTable == document.activeElement && inputTableSelected != -1) {
 		event.preventDefault()
 		if (event.key == "Backspace") {
 			inputTableData[inputTableSelected] = inputTableData[inputTableSelected].substring(0,inputTableData[inputTableSelected].length - 1)
