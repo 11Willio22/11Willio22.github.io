@@ -232,6 +232,7 @@ function loadImage(src) {
 }
 
 function draw() {
+	ctx.clearRect(0,0,WIDTH,HEIGHT)
 	ctx.drawImage(bgImage,0,0,WIDTH,HEIGHT)
 	
 	for (let i = 0; i < 7; i++) {
