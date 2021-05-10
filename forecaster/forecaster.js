@@ -311,7 +311,7 @@ function onKeyDown(event) {
 }
 
 var imgsrcinput = document.getElementById("bgimgsrc")
-imgsrcinput.addEventListener("onclick", function(e) {
+document.getElementById("bgimgbutton").addEventListener("click", function(e) {
 	bgImage = loadImage(imgsrcinput.value)
 })
 
