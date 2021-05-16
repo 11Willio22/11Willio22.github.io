@@ -1,0 +1,53 @@
+h1 {
+  font: 50px Quicksand;
+  text-align: center;
+  text-shadow: 0px 2px 3px;
+}
+
+#maindiv {
+  border-radius: 20px;
+  background-color: #F1F1F1;
+  width: 100%;
+  height: 320px;
+  clear: both;
+}
+
+#topic {
+  clear: both;
+  float: right;
+  text-align: center;
+  width: 50%;
+  vertical-align: center;
+
+  margin: 100px auto;
+  font: 50px Quicksand;
+  background-color: #E7E7E7;
+}
+
+#timerdiv {
+  width: 50%;
+  background-color: #C1C1C1;
+  height: 90%;
+}
+
+#timer {
+  font: 70px Fredoka One;
+  text-align: center;
+  color: #CFF1F7;
+}
+
+h2 {
+  font: 30px Quicksand;
+  text-align: center;
+  background-color: #E1E1E1;
+}
+
+#new {
+  position: relative;
+  font: 30px Quicksand;
+  width: 100%;
+  padding: 10px;
+  
+  border: none;
+  background-color: "#5757F1";
+}
