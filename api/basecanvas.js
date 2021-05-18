@@ -40,13 +40,21 @@ function setupInputs() {
   })
 }
 
-function send(url, msg, onReceive) {
+function serverPost(url, msg, onReceive) {
 	fetch (url, {
   	method: "POST",
     body: msg
   })
   .then(response => response.text())
   .then(text => onReceive(text))
+}
+
+function get(url, onReceive) {
+	fetch (url, {
+		method: "GET"
+	})
+	.then(response => response.text())
+	.then(text => onReceive(text))
 }
 
 createCanvas()
