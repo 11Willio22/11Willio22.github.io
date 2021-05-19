@@ -40,6 +40,13 @@ function setupInputs() {
   })
 }
 
+function hex(r,g,b) {
+	let rs = parseInt(r * 256).toString(16)
+	let gs = parseInt(g * 256).toString(16)
+	let bs = parseInt(b * 256).toString(16)
+	return "#" + ((rs.length == 1) ? "0" + rs : rs) + ((gs.length == 1) ? "0" + gs : gs) + ((bs.length == 1) ? "0" + bs : bs)
+}
+
 function serverPost(url, msg, onReceive) {
 	fetch (url, {
   	method: "POST",
