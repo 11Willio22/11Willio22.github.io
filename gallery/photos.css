@@ -1,0 +1,43 @@
+#comingsoon {
+    font: 79px Broadway;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px;
+    
+    text-shadow: 0px 5px 5px;
+
+    display: auto;
+    margin: 10px 20px 50px 20px;
+    padding: 50px;
+    background-color: #F9F9F9E0;
+
+    outline: 15px dotted #bd9c31;
+    outline-offset: -30px;
+}
+
+body {
+    background-image: url("https://11willio22.github.io/gallery/DSC_0001.JPG");
+    background-size: 100vw;
+    padding: 100px;
+}
+
+#previmgs {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #F1F1F1E0;
+    border: 10px white;
+}
+
+.previmg {
+    width: 30%;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#explanation {
+    font: 20px Quicksand;
+    background-color: #F1F1F1E0;
+    border-radius: 10px;
+    padding: 20px;
+}
